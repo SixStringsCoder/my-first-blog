@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Steve's blog</title>
+
+    {# CSS Stylesheets #}
+    <link rel="stylesheet" href="{% static 'blog/vendor/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/vendor/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+
+    {# Google Fonts #}
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Ubuntu:400,500" rel="stylesheet">
+</head>
+
+<body>
+        <div class="page-header">
+            <h1><a href="/">SixStrings Blog</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+</body>
+</html>

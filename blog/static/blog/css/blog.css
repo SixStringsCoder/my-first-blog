@@ -1,0 +1,94 @@
+/*
+ * Start Bootstrap - Full (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/*
+Home Page for Shelfio Web Application - created June 17, 2017 by Steve Hanlon
+*/
+
+/*--------------------
+     BASE STYLES
+----------------------*/
+
+body {
+    background-color: #FFFFD0;
+}
+
+
+p {
+    font-size: 1.7em;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 2px;
+}
+
+.page-header {
+    background-color: #A2A846;
+    box-shadow: 0 1px 2px #573316;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+    border-bottom: none;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #FFFFD0;
+    text-shadow: 1px 1px #573316;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.date {
+    color: #8C7950;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h1 a {
+    color: #573316;
+}
+
+.post h1 a:visited {
+    color: #000000;
+}
+
+
+
+/* --------------------------
+-----------------------------
+        Media Queries
+-----------------------------
+--------------------------- */
+/* Medium Size Screens */
+@media (max-width: 769px) {
+}
+
+
+/* Small Screens */
+@media (max-width: 569px) {
+}
