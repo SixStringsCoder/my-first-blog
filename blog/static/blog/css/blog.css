@@ -16,7 +16,18 @@ body {
     background-color: #FFFFD0;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu', sans-serif;
+}
 
+
+a:visited {
+    color: #FFFFD0;
+}
+
+/*------------------------
+   Blog list and detail
+-------------------------*/
 p {
     font-size: 1.7em;
     font-family: 'Shadows Into Light', cursive;
@@ -42,12 +53,10 @@ p {
     margin-left: 40px;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Ubuntu', sans-serif;
-}
-
 .date {
     color: #8C7950;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
 }
 
 .save {
@@ -77,6 +86,38 @@ h1, h2, h3, h4 {
     color: #000000;
 }
 
+
+/*------------------------
+          Buttons
+-------------------------*/
+
+.btn {
+    font-size:20px;
+    background-color:#8C7950;
+    padding: 10px 20px;
+    color:#FFFFD0;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px #3C3420;
+    outline: none;
+}
+
+.btn:active, .btn:visited {
+    outline: none;
+}
+
+.btn-Wrapper {
+    background-color: #179C00;
+}
+
+.btn-Wrapper .btn:hover {
+    animation: squishyBtn 1s cubic-bezier(.37,-0.1,.36,1.35);
+}
+
+@keyframes squishyBtn {
+    55% {padding: 30px 10px;}
+    85% {padding: 10px 30px;}
+    100%{padding: 20px;}
+}
 
 
 /* --------------------------
