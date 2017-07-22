@@ -95,30 +95,39 @@ p {
     font-size:20px;
     background-color:#8C7950;
     padding: 10px 20px;
+    margin-bottom: 20px;
     color:#FFFFD0;
     border-radius: 10px;
     box-shadow: 0 2px 2px #3C3420;
     outline: none;
+    transition: background-color .3s;
+}
+
+.btn:hover {
+    background-color:#695A3C;
+    color: #FFFFD9;
 }
 
 .btn:active, .btn:visited {
     outline: none;
 }
 
-.btn-Wrapper {
-    background-color: #179C00;
+
+/*------------------------
+      Blog post form
+-------------------------*/
+
+.add-icon {
+    font-size: 1.2em;
+    margin-top: 50%;
+    color: #FFFFD0;
+    text-shadow: 2px 3px #3C3420;
 }
 
-.btn-Wrapper .btn:hover {
-    animation: squishyBtn 1s cubic-bezier(.37,-0.1,.36,1.35);
+.add-icon:active {
+    color: #3C3420;
+    text-shadow: none;
 }
-
-@keyframes squishyBtn {
-    55% {padding: 30px 10px;}
-    85% {padding: 10px 30px;}
-    100%{padding: 20px;}
-}
-
 
 /* --------------------------
 -----------------------------

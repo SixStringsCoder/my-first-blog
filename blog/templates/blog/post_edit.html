@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1>New post</h1>
+        <form action="" method="POST" class="post-form">
+            <!-- csrf is cross site request forgery tag.  Makes sure form submission comes from
+            a form on the actual website.  Makes sure cookie is set on your browser-->
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn">Save</button>
+        </form>
+{% endblock %}
