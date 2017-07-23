@@ -1,12 +1,16 @@
+{# This is the base HTML page for the blog.  It contains foundational style sheets and page layout. #}
+
 {% load staticfiles %}
 <html>
 <head>
-    <title>Steve's blog</title>
+    <title>Steve's SixString blog</title>
 
-    {# CSS Stylesheets #}
+    {# CSS Stylesheets  - initial reset and normalize#}
     <link rel="stylesheet" href="{% static 'blog/vendor/reset.css' %}">
     <link rel="stylesheet" href="{% static 'blog/vendor/normalize.css' %}">
+    {# CSS Stylesheets - Bootstrap  #}
     <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}">
+    {# CSS - my custom styles #}
     <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
 
     {# Google Fonts #}
@@ -14,20 +18,25 @@
 </head>
 
 <body>
-        <div class="page-header">
-            {% if user.is_authenticated %}
-                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus add-icon"></span></a>
-                <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit draft-icon"></span></a>
-            {% endif %}
-                <h1><a href="/">SixStrings Blog</a></h1>
-        </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                {% block content %}
-                {% endblock %}
-                </div>
+
+    <header class="page-header">
+        {% if user.is_authenticated %}
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus add-icon"></span></a>
+            <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit draft-icon"></span></a>
+        {% endif %}
+            {# Blog Heading Text #}
+            <h1><a href="/">SixString Blog</a></h1>
+    </header>
+
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+                {# content for other webpages goes here #}
+            {% endblock %}
             </div>
         </div>
+    </div>
+
 </body>
 </html>

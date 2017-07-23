@@ -20,19 +20,19 @@ h1, h2, h3, h4 {
     font-family: 'Ubuntu', sans-serif;
 }
 
-
 a:visited {
     color: #FFFFD0;
 }
 
-/*------------------------
-   Blog list and detail
--------------------------*/
 p {
     font-size: 1.7em;
     font-family: 'Shadows Into Light', cursive;
     letter-spacing: 2px;
 }
+
+/*------------------------
+   Blog list and detail
+-------------------------*/
 
 .page-header {
     background-color: #A2A846;
@@ -63,6 +63,11 @@ p {
     float: right;
 }
 
+
+/*------------------------
+       Blog Form
+-------------------------*/
+
 .post-form textarea, .post-form input {
     width: 100%;
 }
@@ -86,6 +91,18 @@ p {
     color: #000000;
 }
 
+.add-icon, .draft-icon {
+    font-size: 1.2em;
+    margin-top: 35%;
+    margin-right: 15px;
+    color: #FFFFD0;
+    text-shadow: 2px 3px #3C3420;
+}
+
+.add-icon:active, .draft-icon:active {
+    color: #3C3420;
+    text-shadow: none;
+}
 
 /*------------------------
           Buttons
@@ -113,22 +130,8 @@ p {
 }
 
 
-/*------------------------
-      Blog post form
--------------------------*/
 
-.add-icon, .draft-icon {
-    font-size: 1.2em;
-    margin-top: 35%;
-    margin-right: 15px;
-    color: #FFFFD0;
-    text-shadow: 2px 3px #3C3420;
-}
 
-.add-icon:active, .draft-icon:active {
-    color: #3C3420;
-    text-shadow: none;
-}
 
 /* --------------------------
 -----------------------------

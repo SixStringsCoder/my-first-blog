@@ -1,3 +1,5 @@
+{# This template acts as a New Post web page and the Edit post web page #}
+
 {% extends 'blog/base.html' %}
 
 {% block content %}
@@ -6,6 +8,7 @@
             <!-- csrf is cross site request forgery tag.  Makes sure form submission comes from
             a form on the actual website.  Makes sure cookie is set on your browser-->
             {% csrf_token %}
+            {# Blog Form #}
             {{ form.as_p }}
             <button type="submit" class="save btn">Save</button>
         </form>

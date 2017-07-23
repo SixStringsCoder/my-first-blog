@@ -3,23 +3,25 @@
 {% block content %}
     <div class="post">
         <h1>{{ post.title }}</h1>
-        {# Edit icon #}
         {% if user.is_authenticated %}
+            {# Edit post button #}
             <a class="btn" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+            {# Remove post button #}
             <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
         {% endif %}
         <p>{{ post.text|linebreaksbr }}</p>
 
         {% if post.published_date %}
             <div class="date">
-                published on {{ post.published_date }}
+                Published on: {{ post.published_date }}
             </div>
         {% else %}
+            {# Publish button #}
             <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>
         {% endif %}
     </div>
 
-    {# Back button #}
+    {# Back button to post_list #}
     <div class="btn-Wrapper wrapper">
         <a class="btn" href="{% url 'post_list' %}">Back</a>
     </div>

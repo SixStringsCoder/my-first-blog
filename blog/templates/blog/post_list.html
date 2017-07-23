@@ -4,7 +4,8 @@
     {% for post in posts %}
         <div class="post">
             <div class="date">
-                published on {{ post.published_date }}
+                {# 'Published On' date. Shows as 'Published on July 21, 2017, 11:04 p.m.' #}
+                Published on: {{ post.published_date }}
             </div>
             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
             <p>{{ post.text|linebreaksbr }}</p>

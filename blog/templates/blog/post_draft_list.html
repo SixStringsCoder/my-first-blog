@@ -3,6 +3,7 @@
 {% block content %}
     {% for post in posts %}
         <div class="post">
+            {# 'Created On' date. Shows as 'Created on: Monday July 17th, 2017, 10:50 p.m.' #}
             <p class="date">Created on: {{ post.created_date|date:'l N dS, Y, P' }}</p>
             <h1><a href="{%  url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
             <p>{{ post.text|truncatechars:200 }}</p>
