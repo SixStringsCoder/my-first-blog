@@ -117,14 +117,15 @@ p {
       Blog post form
 -------------------------*/
 
-.add-icon {
+.add-icon, .draft-icon {
     font-size: 1.2em;
-    margin-top: 50%;
+    margin-top: 35%;
+    margin-right: 15px;
     color: #FFFFD0;
     text-shadow: 2px 3px #3C3420;
 }
 
-.add-icon:active {
+.add-icon:active, .draft-icon:active {
     color: #3C3420;
     text-shadow: none;
 }
