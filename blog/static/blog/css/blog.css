@@ -91,7 +91,7 @@ p {
     color: #000000;
 }
 
-.add-icon, .draft-icon {
+.add-icon, .draft-icon, .lock-icon {
     font-size: 1.2em;
     margin-top: 35%;
     margin-right: 15px;
@@ -99,10 +99,11 @@ p {
     text-shadow: 2px 3px #3C3420;
 }
 
-.add-icon:active, .draft-icon:active {
+.add-icon:active, .draft-icon:active, .lock-icon:active {
     color: #3C3420;
     text-shadow: none;
 }
+
 
 /*------------------------
           Buttons
@@ -129,9 +130,23 @@ p {
     outline: none;
 }
 
+/*------------------------
+       Login Form
+-------------------------*/
 
+input[type=text], input[type=password] {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
 
+}
 
+label {
+    margin-bottom: 20px;
+    font-size: 1.7em;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 2px;
+}
 
 /* --------------------------
 -----------------------------

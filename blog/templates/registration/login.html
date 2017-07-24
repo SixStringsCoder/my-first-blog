@@ -1,0 +1,29 @@
+{% extends 'blog/base.html' %}
+
+{%  block title %}
+    <title>Log In - SixStringsBlog</title>
+{% endblock %}
+
+{% block content %}
+    {% if form.errors %}
+        <p> Yo, homey!  Your creds are suspect!  Try again or find another hussle!</p>
+    {% endif %}
+
+    <form action="{% url 'login' %}" method="POST">
+    {# csrf is cross site request forgery tag. #}
+    {% csrf_token %}
+        <table>
+            <tr>
+                <td class="login_input">{{ form.username.label_tag }}</td>
+                <td>{{ form.username }}</td>
+            </tr>
+            <tr>
+                <td class="login_input">{{ form.password.label_tag }}</td>
+                <td>{{ form.password }}</td>
+            </tr>
+            </table>
+
+            <input type="submit" value="login" class="btn"/>
+            <input type="hidden" name="next" value="{{ next }}" />
+    </form>
+{% endblock %}
