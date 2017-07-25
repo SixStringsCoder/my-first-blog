@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{%  block title %}
+    <title>Comment - SixStringsBlog</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Comment on {{ post.title }}</h1>
+    <form action="" method="POST" class="post-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn">Add</button>
+    </form>
+{% endblock %}

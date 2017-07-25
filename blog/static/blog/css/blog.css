@@ -21,7 +21,7 @@ h1, h2, h3, h4 {
 }
 
 a:visited {
-    color: #FFFFD0;
+    color: #D6D6AF;
 }
 
 p {
@@ -63,6 +63,10 @@ p {
     float: right;
 }
 
+.comment {
+    margin: 20px 0px 20px 20px;
+}
+
 
 /*------------------------
        Blog Form
@@ -91,9 +95,14 @@ p {
     color: #000000;
 }
 
+
+/*------------------------
+         Nav Bar
+-------------------------*/
+
 .add-icon, .draft-icon, .lock-icon {
     font-size: 1.2em;
-    margin-top: 35%;
+    margin-top: 30%;
     margin-right: 15px;
     color: #FFFFD0;
     text-shadow: 2px 3px #3C3420;
@@ -104,6 +113,12 @@ p {
     text-shadow: none;
 }
 
+.welcome, .welcome:hover {
+    font-size: 1.3em;
+    margin-top: 5%;
+    margin-right: -10%;
+    color: #3C3420;
+}
 
 /*------------------------
           Buttons
