@@ -82,6 +82,17 @@ DATABASES = {
     }
 }
 
+# Postgresql if needed
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'djangoblog',
+#         'USER': 'Steve',
+#         'PASSWORD': '',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
 
 # Login Redirect URL leads to home page
 LOGIN_REDIRECT_URL = '/'

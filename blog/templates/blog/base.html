@@ -23,15 +23,19 @@
 <body>
 
     <header class="page-header">
+        {# Blog Heading Text #}
+        <h1><a href="/">SixString Blog</a></h1>
+
         {% if user.is_authenticated %}
+        <nav>
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus add-icon"></span></a>
             <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit draft-icon"></span></a>
             <div class="top-menu welcome">Yo, {{ user.username }}! <small>( <a href="{% url 'logout' %}">Log out</a> )</small></div>
+        </nav>
         {% else %}
             <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock lock-icon"></span></a>
         {% endif %}
-            {# Blog Heading Text #}
-        <h1><a href="/">SixString Blog</a></h1>
+
     </header>
 
     <div class="content container">
